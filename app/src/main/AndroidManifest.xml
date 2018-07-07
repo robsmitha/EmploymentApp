@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.fsu.cs.mobile.hw5">
+
+    <permission android:name="edu.fsu.cs.mobile.hw5.permission.READ_PERMISSION" />
+    <permission android:name="edu.fsu.cs.mobile.hw5.permission.WRITE_PERMISSION" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".TransactionProvider"
+            android:authorities="edu.fsu.cs.mobile.hw5.transactionprovider"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="edu.fsu.cs.mobile.hw5.permission.READ_PERMISSION"
+            android:writePermission="edu.fsu.cs.mobile.hw5.permission.WRITE_PERMISSION"></provider>
+
+        <activity
+            android:name=".EmployeeViewActivity"
+            android:label="Employee">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="content" />
+                <data android:mimeType="vnd.android.cursor.item/edu.fsu.cs.mobile.provider/employees" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

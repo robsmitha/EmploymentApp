@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">hw5</string>
+    <string name="employee_id">Employee ID</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="gender">Gender</string>
+    <string name="department">Department</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="click_to_login">Click to login</string>
+    <string name="email_address">Email Address</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="access_code">Access Code</string>
+    <string name="confirm_access_code">Confirm Access Code</string>
+    <string name="i_agree">I Agree</string>
+    <string name="reset">Reset</string>
+    <string name="submit">Submit</string>
+
+    <string-array name="empids">
+        <item>ABC123</item>
+        <item>XYZ456</item>
+        <item>123ABC</item>
+        <item>456XYZ</item>
+    </string-array>
+    <string-array name="departments">
+        <item>Department</item>
+        <item>Accounting</item>
+        <item>Human Resources</item>
+        <item>Administration</item>
+        <item>Development</item>
+        <item>Quality Assurance</item>
+        <item>Database Administration</item>
+    </string-array>
+</resources>
